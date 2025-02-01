@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+header {
+    /* background: #fff; */
+    background: #ebeef1;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    padding: 0.7rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container nav .logo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    flex: 1;
+}
+
+.container .nav-links {
+    display: flex;
+    flex: 2;
+    /* justify-content: center; */
+}
+
+.container .nav-links li {
+    list-style: none;
+    margin: 0 0.5rem;
+
+    background: #ebeef1;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+}
+
+.container ul li a {
+    color: #333;
+    font-size: 1.1rem;
+    padding: 0.7rem 1rem;
+    display: block;
+    border-radius: 35px;
+}
+
+.container ul li a:hover {
+    color: #000;
+}
+
+.container ul li a.active {
+    color: #4481eb;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+}
+
+.container ul li a:active {
+    color: red;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+}
+
+/* Login Button */
+.login-button a {
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+
+    background: #ebeef1;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+}
+
+.login-button a.active {
+    color: #4481eb;
+    box-shadow: inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+                inset -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container nav {
+        flex-direction: column;
+    }
+
+    .container .nav-links {
+        display: none; /* Hide the links initially */
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 60px; /* Adjust according to header height */
+        left: 0;
+    }
+
+    .container .nav-links.active {
+        display: flex; /* Show the links when active */
+    }
+
+    .container .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .login-button {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    .login-button {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,197 @@
+
+.progress-container {
+  margin-top: 65px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.progress-header {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 65px;
+}
+.progress-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Responsive grid layout */
+.progress-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Make the grid responsive */
+@media (max-width: 992px) {
+  .progress-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.progress-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress-card:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.statistics-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+}
+
+.circle-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+}
+
+.percentage-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.progress-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.skills-list img {
+  width: 90px;
+  height: 50px;
+}
+
+.achievement-icon {
+  color: #ffbf00;
+  font-size: 70px;
+  margin-right: 0.5rem;
+  margin-top: 20px;
+}
+
+
+.awards-card .award-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.award-details span{
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  margin: 0.5rem 0;
+}
+
+.progress-level {
+  background-color: #007bff;
+  height: 100%;
+}
+
+.courses-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+
+.course-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.course-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.course-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.start-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .progress-header h1 {
+    font-size: 2rem;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skills-list img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .course-card {
+    padding: 1rem;
+  }
+}
