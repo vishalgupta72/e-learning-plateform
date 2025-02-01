@@ -33,7 +33,7 @@ function App() {
         localStorage.removeItem("token");
         localStorage.removeItem("user");
         // dispatch({type: "LOGIN_ERROR"});
-        navigate("/login");
+        navigate("/");
       }
     }, []);
 
